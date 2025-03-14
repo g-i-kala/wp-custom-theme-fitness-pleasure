@@ -47,14 +47,16 @@ Fitness Pleasure is designed for fitness coacheas and trainers. This theme is de
   - Post Thumbnails Support: Enable featured images for posts.
   - Custom Widget Area: in the header, posts, footer - social media icons WP Widget.
   - WSform integration.
-    - Newsletter/Search bar in footer on/off 
-    - Contact page form
-  - TBC
+    - Newsletter/Search bar in footer on/off,
+    - Contact page form.
+  - Share on social media custom button.
+  - TBC.
+  
 
 ### 4. Tech Stack
 - Tailwind CSS,
-- Alpine JS,
 - jQuery,
+- Alpine JS - via cdn
 
 
 - `style.css`: Main stylesheet for your theme, including theme details in the header comment.

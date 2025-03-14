@@ -91,18 +91,37 @@ add_action( 'after_setup_theme', 'fitness_pleasure_setup' );
 
 function fitness_pleasure_scripts() {
     // Add Tailwind
-    wp_enqueue_style('tailwind', get_template_directory_uri() . '/assets/css/output.css', array() ); 
+    wp_enqueue_style('tailwind', 
+        get_template_directory_uri() . '/assets/css/output.css', 
+        array() ); 
     
     // Enqueue Style.css
-    wp_enqueue_style( 'fitness_pleasure', get_template_directory_uri() . '/style.css');
-   
-    
-    // Main navigation scripts.
+    wp_enqueue_style( 'fitness_pleasure', 
+        get_template_directory_uri() . '/style.css');
+
+    // Font Awsome
+    wp_enqueue_style(
+        'font-awesome',
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css',
+        array(),
+        null // Optional: no version number
+    );
 
     //jQuery enqueue
-
     wp_enqueue_script('jquery');
-	wp_enqueue_script('mobile-menu-js', get_template_directory_uri() . '/assets/js/mobile-menu.js', array('jquery'), null, true);
+
+    //Load Alpine.js
+    wp_enqueue_script('alpine-js', 
+        'https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js', 
+        array(),
+        null,
+        true); // Load in the footer
+
+	wp_enqueue_script('mobile-menu-js', 
+        get_template_directory_uri() . '/assets/js/mobile-menu.js', 
+        array('jquery'), 
+        null, 
+        true);
 
     // Aria read more sqript enque
 
