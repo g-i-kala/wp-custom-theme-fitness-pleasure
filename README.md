@@ -7,35 +7,33 @@ Fitness Pleasure is designed for fitness coacheas and trainers. This theme is de
 ## Basic Files Checklist for Fitness Pleasure
 
 ### 1. Core Template Files
-- `index.php`: Main template file.
-- `header.php`: Contains the opening HTML, `<head>` section, and header content.
-- `footer.php`: Contains the footer content and closing tags.
-- `sidebar.php`: Optional sidebar file for widgets.
 - `404.php`: Template for 404 error pages.
 - `archive.php`: Template for displaying post archives (categories, tags, dates).
-- `single.php`: Template for displaying single posts.
-- `page.php`: Template for displaying static pages.
-- `home.php`: Template for the blog posts index.
-- `front-page.php`: Template for the site's front page.
 - `comments.php`: Template for comments section.
+- `footer.php`: Contains the footer content and closing tags.
+- `front-page.php`: Template for the site's front page.
+- `functions.php` : functionality, hooks, and filters.
+- `header.php`: Contains the opening HTML, `<head>` section, and header content.
+- `home.php`: Template for the blog posts index.
+- `index.php`: Main template file.
+- `page.php`: Template for displaying static pages.
 - `search.php`: Template for search results.
-- TBC
+- `searchform.php` : custom search form. 
+- `sidebar.php`: Optional sidebar file for widgets.
+- `single.php`: Template for displaying single posts.
 
 ### 2. Template Parts
-- `template-parts/content/content.php`: Main content template for posts/pages.
-- `template-parts/content/content-single.php`: Template for displaying single post content.
-- `template-parts/content/content-preview.php`: Template for post previews (used in archives).
-- `template-parts/content/content-sticky-posts.php`: For displaying sticky posts.
-- `template-parts/page/content-page.php`: Content for static pages.
-- `template-parts/page/content-post.php`: Content for single post display.
-- `template-parts/post/content-all-posts.php`: Specific content layout for home.
-- `template-parts/footer/newsletter-form.php`: WSforms newsletter signup integration - customizable.
-- `template-parts/footer/search-form.php`: Footer search form if WSforms newsletter disabled - customizable.
-- `template-parts/footer/sidebar-footer.php`: Hardcoded, footer menu & newsletter signup/search bar - customizable.
-- TBC
+- `components/` - reusable components in the whole theme. 
+- `content/` - content display files.
+- `footer/` - footer components.
+- `header/` - header components.
+- `navigation/` - navigation components.
+- `page/` - page dedicates displays and components.
+- `post/` -  post dedicates displays and components.
 
 ## 2.5. Template Pages
 - `theme-templates/page-contact.php`: Template for displaying a contact page with WSform integration - customizable in the customizer.
+- `theme-templates/page-home.php` : Tempate for displaying the blog roll. 
 - TBC
 
 ### 3. Functions and Features
@@ -52,17 +50,17 @@ Fitness Pleasure is designed for fitness coacheas and trainers. This theme is de
   - Share on social media custom button.
   - TBC.
   
-
 ### 4. Tech Stack
 - Tailwind CSS,
 - jQuery,
 - Alpine JS - via cdn
 
-
-- `style.css`: Main stylesheet for your theme, including theme details in the header comment.
+### 5. Assets
+- `style.css`: Main stylesheet for your theme - page container definiton and its RWD.
 - `assets/js/`: Any JavaScript files for interactivity (e.g., scripts for sliders, mobile menus).
 - `assets/fonts/`: Fonts used in your theme.
 - `assets/images/`: Any images used (e.g., logo, header image).
+- `assets/css/`: Tailwind css input.css and output.css files.
 
 ### 5. SEO and Accessibility Enhancements
 - Pagination: Customize pagination links for better navigation.
