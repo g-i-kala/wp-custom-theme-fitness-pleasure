@@ -54,7 +54,11 @@ if ( post_password_required() ) {
                     <label for="comment" class="sr-only">Comment</label>
                     <textarea id="comment" name="comment" rows="4" required 
                         class="w-full px-4 py-2 border focus:ring focus:ring-primary transition-all"
-                        x-on:focus="showFields = true" placeholder="Write your comment here..."></textarea>
+                        x-on:focus="showFields = true" placeholder="Write your comment here..." 
+                        aria-required="true" aria-describedby="comment-help"></textarea>
+                        <div id="comment-help" class="screen-reader-text">
+                            Please write your comment here. This is a required field.
+                        </div>
                 </div>
 
                 <!-- Hidden Fields (Name, Email, Submit) -->
@@ -62,16 +66,25 @@ if ( post_password_required() ) {
                     <div>
                         <label for="author" class="block text-gray-700 font-medium">Name</label>
                         <input id="author" name="author" type="text" required 
-                            class="w-full px-4 py-2 border focus:ring focus:ring-primary">
+                            class="w-full px-4 py-2 border focus:ring focus:ring-primary"
+                            aria-required="true" aria-describedby="author-help">
+                            <div id="author-help" class="screen-reader-text">
+                                Please enter your full name. This is a required field.
+                            </div>
                     </div>
 
                     <div>
                         <label for="email" class="block text-gray-700 font-medium">Email</label>
                         <input id="email" name="email" type="email" required 
-                            class="w-full px-4 py-2 border focus:ring focus:ring-primary">
+                            class="w-full px-4 py-2 border focus:ring focus:ring-primary"
+                            aria-required="true" aria-describedby="email-help">
+                            <div id="email-help" class="screen-reader-text">
+                                Please enter your email address. This is a required field.
+                            </div>
                     </div>
 
-                    <button type="submit" class="my-4 bg-black hover:bg-white text-white hover:text-black font-bold border-2 border-black px-4 py-1 uppercase">
+                    <button type="submit" class="my-4 bg-black hover:bg-white text-white hover:text-black font-bold border-2 border-black px-4 py-1 uppercase" 
+                            aria-label="Post your comment">
                         Post Comment
                     </button>
                 </div>

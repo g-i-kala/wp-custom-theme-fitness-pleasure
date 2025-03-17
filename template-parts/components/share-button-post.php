@@ -1,13 +1,14 @@
 <div class="share__wrapper relative inline-block" x-data="{ openShare: false, showIcons: false }">
     
-    <div id="share-button" 
-        role="button" 
+    <button id="share-button" 
+        aria-label="Open share menu" 
+        aria-expanded="false"
         @click="openShare = !openShare"
          class="wrapper w-4 flex flex-col justify-center items-center space-y-[2px] hover:cursor-pointer">
         <span class="inline-block w-1 h-1 bg-black rounded-full"></span>
         <span class="inline-block w-1 h-1 bg-black rounded-full"></span>
         <span class="inline-block w-1 h-1 bg-black rounded-full"></span>
-    </div>
+    </button>
 
     <div class="share-tooltip" 
         x-show="openShare" 

@@ -13,7 +13,7 @@ $category_query = new WP_Query($category_args);
 ?>
 
 <?php if ($category_query->have_posts()) : ?>
-    <section class="sticky-posts border-t-2 border-black">
+    <section class="3green-preview-posts border-t-2 border-black">
         
         <?php get_template_part('/template-parts/components/title', 'section', array('title' => $category)); ?>
         

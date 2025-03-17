@@ -1,7 +1,6 @@
 <!-- Normal Posts -->
 <?php
 $normal_args = array(
-    'post__not_in' => $sticky,
     'posts_per_page' => 6,
     //'category_name'   => 'kite', // Multiple tag slugs
     'paged' => get_query_var('paged') ? get_query_var('paged') : 1
