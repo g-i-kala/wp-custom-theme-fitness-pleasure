@@ -23,11 +23,13 @@
 /* WCAG */
 .screen-reader-text {
     position: absolute;
-    left: -9999px;
-    top: auto;
     width: 1px;
     height: 1px;
-    overflow: hidden;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0); 
+    overflow: hidden; 
 }
 
 .skip-link {

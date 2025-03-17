@@ -9,7 +9,7 @@ get_header(); ?>
 
     <header class="archive-header">
             <h1 class="page-title">
-                <?php get_template_part('/template-parts/components/simple-title', null, array('title' =>  esc_html(get_the_archive_title()))); ?>
+                <?php get_template_part('/template-parts/components/title', 'simple', array('title' =>  esc_html(get_the_archive_title()))); ?>
             </h1>
     </header>
 

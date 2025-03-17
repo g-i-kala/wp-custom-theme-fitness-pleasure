@@ -13,6 +13,9 @@
     </button>
     
     <!-- Menu -->
-    <?php get_template_part('template-parts/components/site-menu', null, array('menu_class' => 'flex-col md:flex-row')); ?>        
+    <?php 
+        get_template_part('template-parts/components/site-menu', null, 
+        array('menu_class' => 'flex-col md:flex-row','menu_id' => 'header-navbar')); 
+    ?>        
 
 </div>

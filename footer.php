@@ -16,7 +16,7 @@
                         )); ?>
                     
                     <div id="newsletter" class="footer__newsletter w-full md:w-1/2 mx-auto lg:ml-18">
-                        <h4 class="text-sm font-thin">Treat Yourself! Subscribe! </h4>
+                        <h2 class="text-sm font-thin">Treat Yourself! Subscribe! </h2>
                         <?php
                             $newsletter_wsform_id = get_theme_mod('newsletter_wsform_id');
                             if (!empty($newsletter_wsform_id)) {
@@ -30,7 +30,10 @@
                 </div>
                 <div class="footer__menu w-1/4  hidden lg:block mx-auto">
                      <!-- Menu -->
-                    <?php get_template_part('template-parts/components/site-menu', null, array('menu_class' => 'flex-col *:py-4')); ?>        
+                    <?php 
+                        get_template_part('template-parts/components/site-menu', null, 
+                        array('menu_class' => 'flex-col *:py-4', 'menu_id' => 'footer-navbar')); 
+                        ?>        
                 </div>
                 <div id="contact" class="footer__contact w-full md:w-1/2 lg:1/4 flex justify-center content-center">
                     

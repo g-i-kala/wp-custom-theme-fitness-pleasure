@@ -1,10 +1,11 @@
 <!-- Site Menu -->
 <?php
 $menu_class = esc_attr($args['menu_class']); 
+$menu_id = isset($args['menu_id']) ? esc_attr($args['menu_id']) : 'navbar';
 ?>
 
 <!-- Menu -->
-<div id="navbar" class="site-nav header-menu-container hidden lg:block">
+<div id="<? $menu_id ?>" class="site-nav header-menu-container hidden lg:block">
     <nav role="navigation" aria-label="<?php _e('Main Navigation', 'fitness_pleasure'); ?>" class="navbar font-thin">
         <?php
         wp_nav_menu( array(

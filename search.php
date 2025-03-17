@@ -11,7 +11,7 @@
 
         <header class="search-header">
                 <h1 class="page-title">
-                    <?php get_template_part('/template-parts/components/simple-title', null, array('title' =>  esc_html(get_search_query()))); ?>    
+                    <?php get_template_part('/template-parts/components/title', 'simple', array('title' =>  esc_html(get_search_query()))); ?>    
                 </h1>
         </header>
 

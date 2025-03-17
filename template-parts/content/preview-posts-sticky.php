@@ -18,7 +18,7 @@ $sticky_query = new WP_Query($sticky_args);
     <section class="sticky-posts">
         
         <div class="flex flex-row">
-            <div class="hashtag w-[3rem] bg-black" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/title_bg_bolt_<?php echo rand(1,6)?>.png'); background-size: contain; background-repeat: no-repeat;background-position: bottom;"></div>
+            <div class="hashtag w-[3rem] bg-black" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/title_bg_bolt_<?php echo rand(1,6)?>.webp'); background-size: contain; background-repeat: no-repeat;background-position: bottom;"></div>
             <h1 class="section-title w-1/2 text-[3rem] font-bold text-sm/10 uppercase px-4 pt-4"><?php _e('Featured Posts', 'fitness_pleasure'); ?></h1>
         </div>
     

@@ -87,13 +87,14 @@ if ( ! function_exists( 'fitness_pleasure_setup' ) ) :
 endif; // fitness_pleasure_setup
 add_action( 'after_setup_theme', 'fitness_pleasure_setup' );
 
+
 // Enqueues scripts and styles.
 
 function fitness_pleasure_scripts() {
     // Add Tailwind
     wp_enqueue_style('tailwind', 
         get_template_directory_uri() . '/assets/css/output.css', 
-        array() ); 
+        array(), true ); 
     
     // Enqueue Style.css
     wp_enqueue_style( 'fitness_pleasure', 
@@ -135,7 +136,6 @@ function fitness_pleasure_scripts() {
    
 }
 add_action( 'wp_enqueue_scripts', 'fitness_pleasure_scripts' );
-
 
 // After Setup 
 // Load the textdomain
@@ -229,19 +229,27 @@ function fitness_pleasure_customize_brands($wp_customize) {
         'priority' => 30,
     ));
 
-    // Add a setting for the hero image
     $wp_customize->add_setting('brand_image_1', array(
         'default' => '',
         'sanitize_callback' => 'esc_url_raw',
     ));
 
-    // Add the images
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'brand_image_1_control', array(
         'label' => __('Upload 1st Image', 'fitness_pleasure'),
         'section' => 'brands_images_section',
         'settings' => 'brand_image_1',
     )));
      
+    $wp_customize->add_setting('brand_url_1', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control('brand_url_1', array(
+        'label' => __('URL for Brand 1', 'fitness_pleasure'),
+        'section' => 'brands_images_section', // Replace with your section
+        'type' => 'url',
+    ));
+
     $wp_customize->add_setting('brand_image_2', array(
         'default' => '',
         'sanitize_callback' => 'esc_url_raw',
@@ -251,7 +259,17 @@ function fitness_pleasure_customize_brands($wp_customize) {
         'section' => 'brands_images_section',
         'settings' => 'brand_image_2',
     )));
-     
+
+    $wp_customize->add_setting('brand_url_2', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control('brand_url_2', array(
+        'label' => __('URL for Brand 2', 'fitness_pleasure'),
+        'section' => 'brands_images_section',
+        'type' => 'url',
+    ));
+
     $wp_customize->add_setting('brand_image_3', array(
         'default' => '',
         'sanitize_callback' => 'esc_url_raw',
@@ -261,7 +279,17 @@ function fitness_pleasure_customize_brands($wp_customize) {
         'section' => 'brands_images_section',
         'settings' => 'brand_image_3',
     )));
-    
+
+    $wp_customize->add_setting('brand_url_3', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control('brand_url_3', array(
+        'label' => __('URL for Brand 3', 'fitness_pleasure'),
+        'section' => 'brands_images_section',
+        'type' => 'url',
+    ));
+
     $wp_customize->add_setting('brand_image_4', array(
         'default' => '',
         'sanitize_callback' => 'esc_url_raw',
@@ -271,6 +299,17 @@ function fitness_pleasure_customize_brands($wp_customize) {
         'section' => 'brands_images_section',
         'settings' => 'brand_image_4',
     )));
+
+    $wp_customize->add_setting('brand_url_4', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control('brand_url_4', array(
+        'label' => __('URL for Brand 4', 'fitness_pleasure'),
+        'section' => 'brands_images_section',
+        'type' => 'url',
+    ));
+
 }
 add_action('customize_register', 'fitness_pleasure_customize_brands');
 
@@ -412,6 +451,7 @@ function mytheme_customize_footer_widget( $wp_customize ) {
 add_action( 'customize_register', 'mytheme_customize_footer_widget' );
 
 // Remove prefixes
+
 function wpdocs_remove_archive_title_prefixes( $title, $original_title ) { 
 	return $original_title; 
 } 
