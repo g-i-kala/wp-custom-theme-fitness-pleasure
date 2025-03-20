@@ -23,7 +23,7 @@ Fitness Pleasure is designed for fitness coacheas and trainers. This theme is de
 - `single.php`: Template for displaying single posts.
 
 ### 2. Template Parts
-- `components/` - reusable components in the whole theme. 
+- `components/` - reusable components throught the whole theme. 
 - `content/` - content display files.
 - `footer/` - footer components.
 - `header/` - header components.
@@ -52,8 +52,8 @@ Fitness Pleasure is designed for fitness coacheas and trainers. This theme is de
   
 ### 4. Tech Stack
 - Tailwind CSS,
-- jQuery,
-- Alpine JS - via cdn
+- Alpine JS 
+- JS
 
 ### 5. Assets
 - `style.css`: Main stylesheet for your theme - page container definiton and its RWD.

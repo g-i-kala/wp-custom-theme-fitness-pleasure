@@ -109,7 +109,7 @@ function fitness_pleasure_scripts() {
     );
 
     //jQuery enqueue
-    wp_enqueue_script('jquery');
+    //wp_enqueue_script('jquery');
 
     //Load Alpine.js
     wp_enqueue_script('alpine-js', 
@@ -118,10 +118,16 @@ function fitness_pleasure_scripts() {
         null,
         true); // Load in the footer
 
-	wp_enqueue_script('mobile-menu-js', 
-        get_template_directory_uri() . '/assets/js/mobile-menu.js', 
-        array('jquery'), 
-        null, 
+	// wp_enqueue_script('mobile-menu-js', 
+    //     get_template_directory_uri() . '/assets/js/mobile-menu.js', 
+    //     array('jquery'), 
+    //     null, 
+    //     true);
+
+    	wp_enqueue_script('mobile-menu-focus-trap-js', 
+        get_template_directory_uri() . '/assets/js/mobile-menu-focus-trap.js', 
+        array(), 
+        1.0, 
         true);
 
     // Aria read more sqript enque

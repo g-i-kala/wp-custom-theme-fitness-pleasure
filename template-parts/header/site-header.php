@@ -1,7 +1,7 @@
 <!-- Site header -->
 
 <header class="sticky top-0 md:pt-[3rem] z-50 bg-white">
-        <?php get_template_part('template-parts/navigation/menu','mobile'); ?>        
+        <?php //get_template_part('template-parts/navigation/menu','mobile'); ?>        
     
     <div class="content__container bg-white tracking-wide">
 
