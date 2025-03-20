@@ -15,7 +15,7 @@
 </head>
 
 <!-- open the body -->
-<body <?php body_class('font-dmsans'); ?>>
+<body <?php body_class('font-dmsans '); ?>>
 <?php wp_body_open(); ?>
 
     <div id="page" class="site flex flex-col justify-center min-h-screen">

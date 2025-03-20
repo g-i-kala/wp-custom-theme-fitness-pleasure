@@ -20,13 +20,15 @@ $menu_id = isset($args['menu_id']) ? esc_attr($args['menu_id']) : 'navbar';
     </button>
     
      <!-- Mobile Full Screen Menu-->
-    <div x-show="mobileMenuIsOpen" 
+    <div x-cloak 
+        x-show="mobileMenuIsOpen" 
         id="full-screen-menu"   
         role="navigation" 
         x-show="mobileMenuIsOpen" 
-		
+        x-transition
         aria-label="<?php _e('Main Navigation', 'fitness_pleasure'); ?>">
-        <div class="absolute top-0 left-0 w-screen h-screen bg-black z-50 flex items-center justify-center">
+        
+        <div class="fixed top-0 left-0 w-screen h-screen bg-black z-50 flex items-center justify-center">
             <button @click="mobileMenuIsOpen=!mobileMenuIsOpen" 
                 id="mobile-close" 
                 aria-label="<?php _e('Close navigation', 'fitness_pleasure'); ?>" 
