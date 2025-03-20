@@ -45,6 +45,12 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
+        // Event listener for the X button
+        const closeButton = document.getElementById("mobile-close");
+        if (closeButton) {
+            closeButton.addEventListener("click", closeMenu);
+        }
+
         modal.addEventListener('keydown', handleTabKey);
 
         // Set focus to the first focusable element
@@ -53,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function observeMenuVisibility() {
         const menu = document.getElementById("full-screen-menu");
-
         if (!menu) return;
 
         const observer = new MutationObserver(() => {
