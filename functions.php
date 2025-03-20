@@ -127,7 +127,7 @@ function fitness_pleasure_scripts() {
     	wp_enqueue_script('mobile-menu-focus-trap-js', 
         get_template_directory_uri() . '/assets/js/mobile-menu-focus-trap.js', 
         array(), 
-        null, 
+        1.0, 
         true);
 
     // Aria read more sqript enque

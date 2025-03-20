@@ -12,7 +12,8 @@ $menu_id = isset($args['menu_id']) ? esc_attr($args['menu_id']) : 'navbar';
             class="mobile-menu block lg:hidden cursor-pointer bg-transparent border-0 p-2.5" 
             aria-expanded="false" 
             aria-label="<?php _e('Toggle navigation','fitness_pleasure') ?>" 
-            aria-controls="full-screen-menu">
+            aria-controls="full-screen-menu"
+            data-menu-button>
         <span class="bar block w-8 h-1 my-1.5 bg-white 200rounded-lg mx-auto transition-all duration-300"></span>
         <span class="bar block w-8 h-1 my-1.5 bg-white rounded-lg mx-auto transition-all duration-300"></span>
         <span class="bar block w-8 h-1 my-1.5 bg-white rounded-lg mx-auto transition-all duration-300"></span>
@@ -20,7 +21,6 @@ $menu_id = isset($args['menu_id']) ? esc_attr($args['menu_id']) : 'navbar';
     
      <!-- Mobile Full Screen Menu-->
     <div x-show="open" 
-        @click.away="open = false" 
         id="full-screen-menu"  
         class="lg:hidden" 
         role="navigation" 
@@ -52,3 +52,4 @@ $menu_id = isset($args['menu_id']) ? esc_attr($args['menu_id']) : 'navbar';
             </nav>
     </div>
 </div>
+
