@@ -5,32 +5,29 @@ Template Name: Contact Page
 get_header();
 ?>
 
-<main id="primary" class="site-main">
-    
-    <!-- Wrapper div for title and content -->
-    <div class="page-wrapper">
+<main id="primary" class="contact__template__wrapper">
         
-        <!-- Page Title -->
-        <header class="page-title-wrapper">
-            <h1 class="page-title"><?php the_title(); ?></h1>
-        </header>
+        <div class="page__wrapper">           
+            <header class="page__title">
+                <?php get_template_part('/template-parts/components/title', 'page', array('title' =>  esc_html(get_the_title()))); ?>    
+            </header>
 
-        <!-- Page Content -->
-        <div class="page-content flex">
-            <div class="contact-form-wrapper">
-       
-            <?php
-            $wsform_id = get_theme_mod('contactform_wsform_id');
-            if (!empty($wsform_id)) {
-                echo do_shortcode('[ws_form id="' . esc_attr($wsform_id) . '"]');
-            } else {
-                echo '<p>' . __('Please set a WSForm ID in the Customizer.', 'kalissima') . '</p>';
-            }
-            ?>
-            </div>
-        </div>
+            <div class="page__contact mx-auto w-auto lg:w-2xl md:w-xl my-4">
+                <div class="contact__form__wrapper flex flex-col justify-center bg-black p-8">
         
-    </div> <!-- End of page-wrapper -->
+                        <?php
+                        $wsform_id = get_theme_mod('contactform_wsform_id');
+                        if (!empty($wsform_id)) {
+                            echo do_shortcode('[ws_form id="' . esc_attr($wsform_id) . '"]');
+                        } else {
+                            echo '<p>' . __('Please set a WSForm ID in the Customizer.', 'kalissima') . '</p>';
+                        }
+                        ?>
+                    
+                    
+                </div>
+            </div>
+        </div> 
 
 </main><!-- #main -->
 <?php

@@ -9,6 +9,7 @@
 			<?php if ( have_posts() ) : ?>
 				<h1 class="w-full text-[6rem] font-bold text-sm/20"> <?php echo get_theme_mod('front_page_title') ?></h1>
 				<h2 class="w-full text-[2rem] font-thin text-sm/10 pt-2 lg:pt-4 "> <?php echo get_theme_mod('front_page_subtitle') ?></h2>
+				
 
 			
 				<?php get_template_part('template-parts/content/content-hero-featured'); ?>

@@ -30,7 +30,7 @@ get_header(); ?>
         <?php endif; ?>
     </div>
 
-    <!-- Search Form at Bottom -->
+    <!-- Search Form -->
     <div class="search-form-archive py-4 border-t-2 border-black">
         <?php get_search_form(array('aria_label' => __('Site search', 'fitness_pleasure'))); ?>
     </div>

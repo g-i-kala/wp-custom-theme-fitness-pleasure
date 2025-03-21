@@ -1,90 +1,65 @@
 # Fitness Pleasure WordPress Theme
 
-Fitness Pleasure is a custom-built WordPress theme created as a mockup for exercising and showcasing WordPress development skills. **This theme is not for sale or commercial use and is meant purely for educational and demonstration purposes.**
+Fitness Pleasure is a custom-built WordPress theme designed for fitness coaches and trainers. This theme is intended for educational and demonstration purposes only and is not for sale or commercial use.
 
-Fitness Pleasure is designed for fitness coacheas and trainers. This theme is designed to be customizable, with various template parts and features to enhance your website's functionality and appearance.
+## Getting Started
 
-## Basic Files Checklist for Fitness Pleasure
+### Installation
+1. Download the theme files and upload them to `wp-content/themes/fitness-pleasure`.
+2. Activate the theme via `Appearance > Themes` in the WordPress dashboard.
+3. Customize the theme using the WordPress Customizer (`Appearance > Customize`).
 
-### 1. Core Template Files
-- `404.php`: Template for 404 error pages.
-- `archive.php`: Template for displaying post archives (categories, tags, dates).
-- `comments.php`: Template for comments section.
-- `footer.php`: Contains the footer content and closing tags.
-- `front-page.php`: Template for the site's front page.
-- `functions.php` : functionality, hooks, and filters.
-- `header.php`: Contains the opening HTML, `<head>` section, and header content.
-- `home.php`: Template for the blog posts index.
-- `index.php`: Main template file.
-- `page.php`: Template for displaying static pages.
-- `search.php`: Template for search results.
-- `searchform.php` : custom search form. 
-- `sidebar.php`: Optional sidebar file for widgets.
-- `single.php`: Template for displaying single posts.
+## How to Use the Template
 
-### 2. Template Parts
-- `components/` - reusable components throught the whole theme. 
-- `content/` - content display files.
-- `footer/` - footer components.
-- `header/` - header components.
-- `navigation/` - navigation components.
-- `page/` - page dedicates displays and components.
-- `post/` -  post dedicates displays and components.
+### Customization Options
+Customize the following elements in the WordPress Customizer:
+- **Site Identity**: Upload your logo, set the site title, tagline, and favicon (site icon).
+- **Hero Image**: Set a custom hero image for the front page.
+- **Brand Images**: Add up to 4 brand images with corresponding URLs.
+- **Menu**: Create and manage your navigation menu.
+- **WSform Integration**: 
+  - Install the WSform plugin.
+  - Create both newsletter and contact forms using the provided templates.
+  - Reference these forms in the Customizer.
+- **Social Media Widgets**: Add social media icons in the header and footer widget areas.
 
-## 2.5. Template Pages
-- `theme-templates/page-contact.php`: Template for displaying a contact page with WSform integration - customizable in the customizer.
-- `theme-templates/page-home.php` : Tempate for displaying the blog roll. 
-- TBC
+**Note**: Ensure that you set the homepage settings to designate your Home and Blog pages for full functionality. The theme includes a dedicated contact page template.
 
-### 3. Functions and Features
-- `functions.php`: Main theme functions file where you can enqueue scripts/styles, register menus, add theme support, etc.
-  - Custom Navigation: Use `wp_nav_menu()` to create a custom navigation menu. 
-  - Custom Logo Support: Add support for custom logos.
-  - Custom Hero image support.
-  - Custom page title & subtitle - for the front page.
-  - Post Thumbnails Support: Enable featured images for posts.
-  - Custom Widget Area: in the header, posts, footer - social media icons WP Widget.
-  - WSform integration.
-    - Newsletter/Search bar in footer on/off,
-    - Contact page form.
-  - Share on social media custom button.
-  - TBC.
-  
-### 4. Tech Stack
-- Tailwind CSS,
-- Alpine JS 
-- JS
+## Core Template Files
+- `404.php`, `archive.php`, `comments.php`, `footer.php`, `front-page.php`, `functions.php`, `header.php`, `home.php`, `index.php`, `page.php`, `search.php`, `searchform.php`, `sidebar.php`, `single.php`.
 
-### 5. Assets
-- `style.css`: Main stylesheet for your theme - page container definiton and its RWD.
-- `assets/js/`: Any JavaScript files for interactivity (e.g., scripts for sliders, mobile menus).
-- `assets/fonts/`: Fonts used in your theme.
-- `assets/images/`: Any images used (e.g., logo, header image).
-- `assets/css/`: Tailwind css input.css and output.css files.
+### Template Parts
+- `components/`, `content/`, `footer/`, `header/`, `navigation/`, `page/`, `post/`.
 
-### 5. SEO and Accessibility Enhancements
-- Pagination: Customize pagination links for better navigation.
+### Template Pages
+- `theme-templates/page-contact.php`: Contact page with WSform integration.
+- `theme-templates/page-home.php`: Blog roll page.
 
-**Under Audit**
-- ARIA Labels: Ensure your forms and navigation menus have proper ARIA attributes for accessibility.
-- SEO Optimization: Ensure proper HTML markup and use of heading tags.
+## Tech Stack
+- Tailwind CSS
+- Alpine JS
+- JavaScript
 
-### Enhancements to Consider
-**Under Construction**
-- Social Share Buttons: Add share buttons to single posts for social media.
+## Assets
+- `assets/css/`: Tailwind CSS files.
+- `style.css`: WP main stylesheet.
+- `assets/js/`: JavaScript files for interactivity.
+- `assets/fonts/`: Fonts used in the theme.
+- `assets/images/`: Images used (headings & titles ornaments).
 
-## Installation
-1. Download the theme files and upload them to your WordPress installation under `wp-content/themes/kalissima`.
-2. Activate the theme through the 'Appearance' > 'Themes' menu in WordPress.
-3. Customize the theme through the WordPress Customizer (`Appearance` > `Customize`).
+
+## SEO and Accessibility Enhancements
+- Pagination for improved navigation.
+- ARIA labels for accessibility.
 
 ## License
-This theme is licensed under the [GPL-2.0 License](LICENSE).
+Licensed under the [GPL-2.0 License](LICENSE).
 
 ## Contributing
-Feel free to fork this repository and submit pull requests. If you find any issues, please open a ticket in the issues section.
+Feel free to fork and submit pull requests. Report issues in the issues section.
 
 ## Support
-For any support requests, please contact karocreativedesigns@gmail.com.
+For support, contact karocreativedesigns@gmail.com.
+If you like the theme, and like to use tweak it and use it don't hesitate!
 
 Enjoy creating with the Fitness Pleasure WordPress Theme!
