@@ -10,9 +10,9 @@
                 <div class="footer__branding w-full md:w-1/2 flex flex-col justify-center content-center gap-8">
                     <!-- Brangind -->
                     <?php get_template_part('/template-parts/components/site-logo-title', null, array(
-                        'branding_justify' => 'justify-center md:justify-items-start',
+                        'branding_justify' => 'justify-center ',
                         'logo_size' => '**:w-auto **:h-14',
-                        'title_size' => 'text-4xl mr-0 md:mr-16'
+                        'title_size' => 'text-4xl mr-0'
                         )); ?>
                     
                     <div id="newsletter" class="footer__newsletter w-full md:w-1/2 mx-auto lg:ml-18">

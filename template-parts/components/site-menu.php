@@ -51,11 +51,11 @@ $menu_id = isset($args['menu_id']) ? esc_attr($args['menu_id']) : 'navbar';
 
 
     <div id="<? $menu_id ?>" class="site-nav header-menu-container hidden lg:block">
-        <nav role="navigation" aria-label="<?php _e('Main Navigation', 'fitness_pleasure'); ?>" class="navbar font-thin">
+        <nav role="navigation" aria-label="<?php _e('Main Navigation', 'fitness_pleasure'); ?>" class="navbar ">
             <?php
             wp_nav_menu( array(
                 'theme_location' => 'site-menu',
-                'menu_class' => "site__menu flex $menu_class text-white *:px-2 *:hover:text-primary *:[&.current-menu-item]:text-primary", // each ul element class
+                'menu_class' => "site__menu flex $menu_class font-thin text-white *:px-2 *:hover:text-primary *:[&.current-menu-item]:text-primary", // each ul element class
             ) );
             ?>
             </nav>
