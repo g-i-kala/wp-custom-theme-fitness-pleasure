@@ -418,7 +418,6 @@ function fitness_pleasure_customize_wsforms( $wp_customize ) {
 		'description' => __('Enter the WS Form ID for your newsletter form.', 'fitness_pleasure'),
     ));
 
-
 	$wp_customize->add_setting('contactform_wsform_id', array(
         'default' => '',
         'sanitize_callback' => 'sanitize_text_field',

@@ -15,9 +15,13 @@ $title_size = isset($args['title_size']) ? esc_attr($args['title_size']) : 'text
             </a>
         </div>
     <?php  endif;  ?>
-        <div class="site__title__motive flex flex-col justify-center ml-4 tracking-wide">
-            <h1 class="site-title <?php echo $title_size; ?>  text-white font-semibold mb-[-0.5rem]"><?php bloginfo('name'); ?></h1>
-            <p class="site-description text-base text-white font-light "><?php bloginfo('description'); ?></p>
-        </div>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"
+            rel="home"
+            aria-label="<?php esc_attr_e('Site Name & Motto', 'fitness_pleasure'); ?>">
+                <div class="site__title__motive flex flex-col justify-center ml-4 tracking-wide">
+                    <h1 class="site-title <?php echo $title_size; ?>  text-white font-semibold mb-[-0.5rem]"><?php bloginfo('name'); ?></h1>
+                    <p class="site-description text-base text-white font-light "><?php bloginfo('description'); ?></p>
+                </div>
+        </a>
     
 </div>
