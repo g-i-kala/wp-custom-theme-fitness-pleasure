@@ -435,26 +435,26 @@ add_action( 'customize_register', 'fitness_pleasure_customize_wsforms' );
 
 // Footer Widget on/off
 
-function mytheme_customize_footer_widget( $wp_customize ) {
-    $wp_customize->add_section( 'footer_widget_section', array(
-        'title'    => __( 'Footer Widget', 'fitness_pleasure' ),
+function mytheme_customize_social_widget( $wp_customize ) {
+    $wp_customize->add_section( 'social_widget_section', array(
+        'title'    => __( 'Social Media Widget', 'fitness_pleasure' ),
         'priority' => 120,
     ) );
 
-    $wp_customize->add_setting( 'show_footer_widget', array(
+    $wp_customize->add_setting( 'show_social_widget', array(
         'default'   => true,
         'transport' => 'refresh',
     ) );
 
-    $wp_customize->add_control( 'show_footer_widget_control', array(
-        'label'    => __( 'Show Footer Widget', 'fitness_pleasure' ),
-        'section'  => 'footer_widget_section',
-        'settings' => 'show_footer_widget',
+    $wp_customize->add_control( 'show_social_widget_control', array(
+        'label'    => __( 'Show Social Media Widget', 'fitness_pleasure' ),
+        'section'  => 'social_widget_section',
+        'settings' => 'show_social_widget',
         'type'     => 'checkbox',
-		'description' => __('<strong>Remember to pick a nice Widget <a href="' . admin_url('widgets.php') . '" target="_blank">Appearance → Widgets</a> for a better user experience.', 'kalissimia'),
+		'description' => __('<strong>Use the Wordpress Social Media Widget <a href="' . admin_url('widgets.php') . '" target="_blank">Appearance → Widgets</a> for a better user experience.', 'kalissimia'),
     ) );
 }
-add_action( 'customize_register', 'mytheme_customize_footer_widget' );
+add_action( 'customize_register', 'mytheme_customize_social_widget' );
 
 // Remove prefixes
 

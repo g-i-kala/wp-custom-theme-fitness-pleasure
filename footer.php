@@ -43,7 +43,7 @@
                             if (!empty($wsform_id)) {
                                 echo do_shortcode('[ws_form id="' . esc_attr($wsform_id) . '"]');
                             } else {
-                                echo '<p>' . __('Please set a WSForm ID in the Customizer.', 'kalissima') . '</p>';
+                                echo '<p>' . __('Please set a contact WSForm ID in the Customizer.', 'kalissima') . '</p>';
                             }
                             ?>
                         </div>
