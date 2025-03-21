@@ -7,7 +7,7 @@
         id="search-field" 
         name="s" 
         class="search-field focus:outline-none focus:ring focus:ring-primary" 
-        placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder'); ?>" 
+        placeholder="<?php echo esc_attr_x('Lets sweat..', 'fitness_pleasure'); ?>" 
         value="<?php echo get_search_query(); ?>" 
         aria-label="<?php echo esc_attr_x('Enter search term', 'aria-label for search input field'); ?>" 
         aria-describedby="search-help" 

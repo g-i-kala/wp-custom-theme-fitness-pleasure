@@ -9,8 +9,12 @@
         </div>
     </div>
     
-    <div class="inline-flex justify-end w-full md:w-1/2">
-        <h2 class=" text-[2rem] font-thin text-sm/10 text-right"> <?php echo get_theme_mod('front_page_subtitle') ?></h2>
-    </div>
+    <!-- <div class="inline-flex justify-end w-full md:w-1/2"> -->
+        <div class="flex justify-end text-[1.5rem] font-thin text-sm/10 pt-2 md:w-1/2 lg:pt-4"> 
+            <div class="search-form-archive py-4">
+                <?php get_search_form(array('aria_label' => __('Site search', 'fitness_pleasure'))); ?>
+            </div>
+        </div>
+    <!-- </div> -->
 
 </div>
