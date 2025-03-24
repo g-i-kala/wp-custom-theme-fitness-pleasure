@@ -39,6 +39,11 @@ if ( ! function_exists( 'fitness_pleasure_setup' ) ) :
 		 * Add default posts and comments RSS feed links to <head>.
 		 */
 		add_theme_support( 'automatic-feed-links' );
+        
+        /**
+		 * Add title tag to <head>.
+		 */
+        add_theme_support('title-tag');
 
 		/**
 		 * Enable support for post thumbnails and featured images.
@@ -51,7 +56,7 @@ if ( ! function_exists( 'fitness_pleasure_setup' ) ) :
 		register_nav_menus( array(
 			'site-menu'   => __( 'Site Menu', 'fitness_pleasure' ),
 		) );
-
+        
 		/**
 		 * Enable support for the following post formats:
 		 * aside, gallery, quote, image, and video
