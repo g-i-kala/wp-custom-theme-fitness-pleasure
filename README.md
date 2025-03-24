@@ -25,6 +25,12 @@ Customize the following elements in the WordPress Customizer:
 
 **Note**: Ensure that you set the homepage settings to designate your Home and Blog pages for full functionality. The theme includes a dedicated contact page template.
 
+## Recommendations
+
+To fully enjoy the desing and communitcation features it is necessary to use the theme with WSForm. The styling file for WSform is provided with the theme. You can download it from the Customizers section `WSform Integration` tab. 
+
+You can create custom forms or use the ones provided. Next it is necessary to include them in the Customizer WSform Section by ID. The provide json file needs to be uploaded vi WS form -> Styles ->Import, don't forget to "Set as default".
+
 ## Core Template Files
 - `404.php`, `archive.php`, `comments.php`, `footer.php`, `front-page.php`, `functions.php`, `header.php`, `home.php`, `index.php`, `page.php`, `search.php`, `searchform.php`, `sidebar.php`, `single.php`.
 
