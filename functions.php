@@ -378,8 +378,8 @@ function my_customizer_menu_alert($wp_customize) {
             array(
                 'label'       => __('No Menu Assigned', 'fitness_pleasure'),
                 'section'     => 'menu_alert_section',
-                'type'        => 'hidden', // Doesn't show a control, only a message
-                'description' => __('<strong>⚠️Set a navigation menu</strong> in <a href="' . admin_url('nav-menus.php') . '" target="_blank">Appearance → Menus</a> for a better experience.', 'kalissimia'),
+                'type'        => 'hidden', 
+                'description' => __('<strong>⚠️Set a navigation menu</strong> in <a href="' . admin_url('nav-menus.php') . '" target="_blank">Appearance → Menus</a> for a better experience.', 'fitness_pleasure'),
             )
         ));
     }
@@ -429,6 +429,20 @@ function fitness_pleasure_customize_wsforms( $wp_customize ) {
         'type' => 'text',
 		'description' => __('Enter the WS Form ID for your contact form. ', 'fitness_pleasure'),
     ));
+
+    $wp_customize->add_setting('wsform_style_file', array(
+        'defaul' => '',
+        'transport' => 'refresh',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'wsform_style_file_control', array(
+        'label'    => __('Download WSForm Style JSON', 'fitness_pleasure'),
+        'section'  => 'wsform_section',
+        'settings' => 'wsform_style_file',
+        'type'     => 'hidden', 
+        'description' => sprintf(__('Click here to download the style file: <a href="%s" target="_blank" download>Download JSON</a>', 'my-theme'), esc_url(get_template_directory_uri() . '/assets/wsf-style-fitness-pleasure.json')),
+    )));
+
 }
 add_action( 'customize_register', 'fitness_pleasure_customize_wsforms' );
 
@@ -450,7 +464,7 @@ function mytheme_customize_social_widget( $wp_customize ) {
         'section'  => 'social_widget_section',
         'settings' => 'show_social_widget',
         'type'     => 'checkbox',
-		'description' => __('<strong>Use the Wordpress Social Media Widget <a href="' . admin_url('widgets.php') . '" target="_blank">Appearance → Widgets</a> for a better user experience.', 'kalissimia'),
+		'description' => __('<strong>Use the Wordpress Social Media Widget <a href="' . admin_url('widgets.php') . '" target="_blank">Appearance → Widgets</a> for a better user experience.', 'fitness_pleasure'),
     ) );
 }
 add_action( 'customize_register', 'mytheme_customize_social_widget' );
