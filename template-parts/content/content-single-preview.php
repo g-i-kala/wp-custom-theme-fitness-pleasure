@@ -18,7 +18,10 @@
                     <span>by <?php echo get_the_author(); ?></span>
                 </div>
                 <h2 class="post-title text-2xl font-bold"><a href="<?php the_permalink(); ?>" class="hover:text-accent"><?php the_title(); ?></a></h2>
-                <a href="<?php the_permalink(); ?>" data-post-title="<?php echo esc_attr(get_the_title()); ?>" class="hover:text-accent" >    
+                <a href="<?php the_permalink(); ?>" 
+                    data-post-title="<?php echo esc_attr(get_the_title()); ?>" 
+                    class="hover:text-accent"
+                    aria-label ="<?php echo esc_attr(get_the_title()); ?>" >    
                     <p class="post-excerpt py-2 text-ml font-montserrat "><?php echo get_the_excerpt(); ?></p>
                 </a>
                 

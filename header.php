@@ -24,5 +24,4 @@
 
         <?php get_template_part('/template-parts/header/site','header'); ?>
 
-        <!-- <div class="content-wrapper"> Content starts ?? -->
             <div class="content__container flex-grow justify-center px-2 md:px-0 py-[2rem] md:py-[4rem] lg:py-[4rem]">
