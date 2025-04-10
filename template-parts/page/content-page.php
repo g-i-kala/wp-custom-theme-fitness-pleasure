@@ -14,7 +14,7 @@
         </header>
 
         <!-- Page Content -->
-        <div class="page-content">
+        <div class="page-content mb-4 mt-4">
             <?php the_content(); ?>
         </div>
         
